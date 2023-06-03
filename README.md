@@ -1,2 +1,2 @@
-# ToDo-List
-Simple To Do list with array methods
+# toDoList
+To do list with Vanilla JS

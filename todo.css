@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+  min-width: 400px;
+  max-width: 700px;
+  margin-top: clamp(18vh, 50px, 100px);
+  margin-inline: auto;
+}
+h1 {
+  text-align: center;
+  color: teal;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+#inputCont button,
+#unDo {
+  display: block;
+  background: turquoise;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 10px;
+  margin-block: 10px;
+  margin-inline: auto;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+#unDo {
+  text-align: right;
+  transform: scale(0.7);
+  margin-left: auto;
+  margin-right: 0;
+  background: bisque;
+}
+#inputCont button:hover {
+  cursor: pointer;
+  transform: translateY(5px);
+}
+#unDo:hover {
+  cursor: pointer;
+
+}
+#toDoEntry {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: 100;
+  border: 1.5px solid teal;
+  border-radius: 25px;
+  padding: 7px;
+  width: 70%;
+  outline: none;
+}
+.error {
+  color: red;
+  text-align: center;
+  display: none;
+  transition: all 0.5s;
+}
+
+ul#out {
+  height: auto;
+}
+.taskStyles {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  background: #8080805e;
+  list-style: decimal;
+  padding: 10px;
+  margin-block: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.taskStyles:first-child {
+  margin-top: 0;
+}
+#done {
+  text-decoration: line-through;
+  font-weight: 400;
+}
+button.cancel {
+  color: white;
+  background: black;
+  border: none;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+}
+.cancel:hover {
+  cursor: pointer;
+  background: red;
+}
+.fa-regular:hover {
+  cursor: pointer;
+}
+#noDeletedMessage{
+  text-align: right;
+}
+#doneTrash {
+  display: flex;
+}
+#doneTrash .fa-regular {
+  display: inline-block;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  font-size: 2rem;
+  height: 170px;
+  width: 170px;
+  background: teal;
+  margin-inline: auto;
+}
+.fa-regular span {
+  margin-top: -20px;
+  font-size: 1rem;
+}
